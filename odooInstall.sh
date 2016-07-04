@@ -1,4 +1,3 @@
-#!/bin/sh
 #Este shell script foi criado com intuito de auxiliar
 # a instalacao do Odoo 8.0 e a localizacao brasileira.
 
@@ -149,6 +148,14 @@ cd /tmp
 git clone https://github.com/aricaldeira/pyxmlsec --branch master
 cd pyxmlsec
 python setup.py install
+
+#Clonando repositorias da Trust-Code.
+echo "==========================="
+echo "Clonning Brazilian Repository"
+echo "==========================="
+cd /opt/odoo
+git clone https://github.com/Trust-Code/trust-addons.git --branch 8.0
+cd trust-addons
 
 #Alterando owner da pasta odoo.
 echo "==========================="
