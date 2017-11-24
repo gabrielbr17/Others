@@ -112,50 +112,50 @@ echo "==========================="
 cd /opt/odoo
 mkdir localizacao
 cd localizacao
-git clone https://github.com/odoo-brazil/l10n-brazil.git --branch 8.0 --depth 1
-git clone https://github.com/odoo-brazil/account-fiscal-rule.git --branch 8.0 --depth 1
-git clone https://github.com/odoo-brazil/odoo-brazil-eletronic-documents.git --branch 8.0 --depth 1
-git clone https://github.com/OCA/server-tools --branch 8.0 --depth 1
+git clone https://github.com/OCA/l10n-brazil.git --branch 8.0 --depth 1
+#git clone https://github.com/odoo-brazil/account-fiscal-rule.git --branch 8.0 --depth 1
+#git clone https://github.com/odoo-brazil/odoo-brazil-eletronic-documents.git --branch 8.0 --depth 1
+#git clone https://github.com/OCA/server-tools --branch 8.0 --depth 1
 
 #Instalando Geraldo reports, utilizado para relatorios.
-echo "==========================="
-echo "Installing Geraldo Reports"
-echo "==========================="
-cd /tmp
-git clone https://github.com/aricaldeira/geraldo --branch master
-cd geraldo
-python setup.py install
+#echo "==========================="
+#echo "Installing Geraldo Reports"
+#echo "==========================="
+#cd /tmp
+#git clone https://github.com/aricaldeira/geraldo --branch master
+#cd geraldo
+#python setup.py install
 
 #Instalando PySped para poder utilizar NFe
-echo "==========================="
-echo "Installing PySped"
-echo "==========================="
-cd /tmp
-wget http://labs.libre-entreprise.org/download.php/430/pyxmlsec-0.3.0.tar.gz
-tar xvzf pyxmlsec-0.3.0.tar.gz
-cd pyxmlsec-0.3.0
-python setup.py install
-cd /tmp
-git clone https://github.com/odoo-brazil/PySPED.git --branch 8.0
-cd PySPED
-python setup.py install
+#echo "==========================="
+#echo "Installing PySped"
+#echo "==========================="
+#cd /tmp
+#wget http://labs.libre-entreprise.org/download.php/430/pyxmlsec-0.3.0.tar.gz
+#tar xvzf pyxmlsec-0.3.0.tar.gz
+#cd pyxmlsec-0.3.0
+#python setup.py install
+#cd /tmp
+#git clone https://github.com/odoo-brazil/PySPED.git --branch 8.0
+#cd PySPED
+#python setup.py install
 
 #Instalando pyxmlsec, necessario para o PySped
-echo "==========================="
-echo "Installing pyxmlsec"
-echo "==========================="
-cd /tmp
-git clone https://github.com/aricaldeira/pyxmlsec --branch master
-cd pyxmlsec
-python setup.py install
+#echo "==========================="
+#echo "Installing pyxmlsec"
+#echo "==========================="
+#cd /tmp
+#git clone https://github.com/aricaldeira/pyxmlsec --branch master
+#cd pyxmlsec
+#python setup.py install
 
 #Clonando repositorias da Trust-Code.
-echo "==========================="
-echo "Clonning Brazilian Repository"
-echo "==========================="
-cd /opt/odoo
-git clone https://github.com/Trust-Code/trust-addons.git --branch 8.0
-cd trust-addons
+#echo "==========================="
+#echo "Clonning Brazilian Repository"
+#echo "==========================="
+#cd /opt/odoo
+#git clone https://github.com/Trust-Code/trust-addons.git --branch 8.0
+#cd trust-addons
 
 #Alterando owner da pasta odoo.
 echo "==========================="
