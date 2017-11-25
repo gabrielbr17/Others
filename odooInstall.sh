@@ -66,11 +66,11 @@ pip install pytz==2014.4
 echo "==========================="
 echo "Installing WKHTMLtoPDF"
 echo "==========================="
-cd /tmp
-wget http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
-dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb
-cp /usr/local/bin/wkhtmltopdf /usr/bin
-cp /usr/local/bin/wkhtmltoimage /usr/bin
+#cd /tmp
+#wget http://download.gna.org/wkhtmltopdf/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
+#dpkg -i wkhtmltox-0.12.1_linux-trusty-amd64.deb
+#cp /usr/local/bin/wkhtmltopdf /usr/bin
+#cp /usr/local/bin/wkhtmltoimage /usr/bin
 
 #Realizando o clone do odoo 8.0
 echo "==========================="
